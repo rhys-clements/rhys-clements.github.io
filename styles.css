@@ -1,0 +1,50 @@
+:root {
+    --bg: #121212;
+    --text: #EBEBEB;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+a {
+   color: var(--text);
+   text-decoration: none;
+   height: inherit;
+}
+
+img {
+  display: inline-block;
+  height: inherit;
+}
+
+b {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: inherit;
+}
+
+.main {
+  text-align: center;
+}
+
+.linkholder{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
