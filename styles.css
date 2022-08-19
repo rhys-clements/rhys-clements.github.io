@@ -2,22 +2,24 @@
     --bg: #121212;
     --text: #EBEBEB;
 }
+
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 a {
    color: var(--text);
    text-decoration: none;
-   height: inherit;
 }
 
-img {
-  display: inline-block;
-  height: inherit;
+a:hover {
+  text-decoration-line:underline;
+
 }
 
 b {
@@ -25,26 +27,34 @@ b {
 }
 
 p {
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 64px;
   font-weight: inherit;
+  margin: 0;
 }
 
-.main {
-  text-align: center;
+.title {
 }
 
-.linkholder{
-  height: 70px;
+.outer {
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: flex;
   justify-content: center;
 }
 
+.inner {
+  text-align: left;
+  width: 60vw;
+  height: 80vh;
+  margin: 10vh;
+}
+
 .link {
   padding: 0;
-  margin-left: 5px;
-  margin-right: 5px;
+  text-align: left;
+  height: inherit;
 }
