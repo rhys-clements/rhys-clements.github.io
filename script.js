@@ -6,7 +6,7 @@ class Scrambled{
   constructor(element){
     this.element = element;
     //this.delay = delay;
-    this.text = element.innerHTML;
+    this.text = element.innerText;
     this.encrypted = this.encrypt(this.text);
     this.timer = setInterval(this.update.bind(this),50);
   }
