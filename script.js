@@ -8,7 +8,7 @@ class Scrambled{
     //this.delay = delay;
     this.text = element.innerHTML;
     this.encrypted = this.encrypt(this.text);
-    this.timer = setInterval(this.update.bind(this),20);
+    this.timer = setInterval(this.update.bind(this),50);
   }
 
   encrypt(text){
@@ -38,7 +38,7 @@ class Scrambled{
 
   update(){
     this.encrypted = this.decrypt(this.text,this.encrypted);
-    this.element.innerHTML = this.encrypted;
+    this.element.innerText = this.encrypted;
 
     if(this.encrypted == this.text){
       clearInterval(this.timer);
